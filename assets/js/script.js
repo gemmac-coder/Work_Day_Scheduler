@@ -1,9 +1,60 @@
-date = moment().format("MMM Do YY");
+const renderCurrentDate = () => {
+  const dateTime = $("currentDay");
+  const displayNow = moment().format("dddd, MMMM Do");
+  dateTime.text(displayNow);
+};
 
-$("#currentDay").append(date);
+const renderCalenderEvents = () => {
+  const schedulerEvents = JSON.parse.localStorage.getItem("schedulerEvents");
 
-console.log(date);
+  if (schedulerEvents !== null) {
+    // const currentHour = moment().hour();
+    const currentHour = 11;
+    const timeBlocks = $(".container .row");
+    const callback = function () {
+      const timeBlockTime = Number.parseInt($(this).data("time"), 10);
+      if (timeBlockTime === currentHour) {
+        $(this).find("textarea").removeClass("past").addClass("present");
+      }
+      if (timeBlockTime > currentHour) {
+        $(this).find("textarea").removeClass("past").addClass("future");
+      }
+    };
 
-currentDateAndTime = moment().format("YYYY-MM-DD HH");
+    timeBlocks.each(callback);
+  } else {
+    localStorage.setItem("schedulerEvents", JSON.stringify({ 9: "hello" }));
+  }
+};
 
-console.log(currentDateAndTime);
+const onReady = () => {
+  renderCurrentDate();
+
+  renderCalenderEvents();
+};
+
+$(document).ready(onReady);
+
+// //const checkTime = function () {
+// const currentTime = moment().format("HH");
+
+// const hourBlock = $(".col-md-1 hour");
+
+//   for (const index = 0; index < hourBlock.length, i++ ) {
+// const hourBlockID = hourBlock[index].id;
+
+// const timeBlockID = document.getElementById("hourBlock");
+
+// $(hourBlock[index].id).removeClass(".present .past .future");
+
+//  if (hourBlockID < currentTime) {
+//   $(timeBlockID).addClass("past");
+// }
+//  else if (hourBlockID > currentTime) {
+//  $(timeBlockID).addClass("future");
+// }
+//  else {
+//  $(timeBlockID).addClass("present");
+//  }
+//  }
+//  };
