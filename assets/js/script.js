@@ -9,7 +9,7 @@ const renderCalenderEvents = () => {
 
   if (schedulerEvents !== null) {
     // const currentHour = moment().hour();
-    const currentHour = 12;
+    const currentHour = 1;
     const timeBlocks = $(".container .row");
     const callback = function () {
       const timeBlockTime = Number.parseInt($(this).data("time"), 10);
@@ -33,7 +33,11 @@ const onReady = () => {
   renderCalenderEvents();
 };
 
-$(document).ready(onReady);
+$(document).ready(function (onReady) {
+  console.log("I am ready");
+});
+
+// $(document).ready(onReady);
 
 // //const checkTime = function () {
 // const currentTime = moment().format("HH");
