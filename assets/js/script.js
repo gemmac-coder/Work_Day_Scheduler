@@ -39,6 +39,10 @@ $(document).ready(function (onReady) {
 
 // $(document).ready(onReady);
 
+// date = moment().format("MMM Do YY");
+
+//$("#currentDay").append(date);
+
 // //const checkTime = function () {
 // const currentTime = moment().format("HH");
 
