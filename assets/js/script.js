@@ -1,16 +1,17 @@
 const renderCurrentDate = () => {
-  const dateTime = $("currentDay");
+  const dateTime = $("#currentDay");
   const displayNow = moment().format("dddd, MMMM Do");
   dateTime.text(displayNow);
 };
 
 const renderCalenderEvents = () => {
-  const schedulerEvents = JSON.parse.localStorage.getItem("schedulerEvents");
+  const schedulerEvents = JSON.parse(localStorage.getItem("schedulerEvents"));
 
   if (schedulerEvents !== null) {
     // const currentHour = moment().hour();
-    const currentHour = 1;
+    const currentHour = 12;
     const timeBlocks = $(".container .row");
+    console.log(timeBlocks);
     const callback = function () {
       const timeBlockTime = Number.parseInt($(this).data("time"), 10);
       if (timeBlockTime === currentHour) {
@@ -28,14 +29,13 @@ const renderCalenderEvents = () => {
 };
 
 const onReady = () => {
+  console.log("I am ready");
   renderCurrentDate();
 
   renderCalenderEvents();
 };
 
-$(document).ready(function (onReady) {
-  console.log("I am ready");
-});
+$(document).ready(onReady);
 
 // $(document).ready(onReady);
 
