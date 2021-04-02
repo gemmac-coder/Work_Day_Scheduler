@@ -58,33 +58,3 @@ const onReady = () => {
 };
 
 $(document).ready(onReady);
-
-// $(document).ready(onReady);
-
-// date = moment().format("MMM Do YY");
-
-//$("#currentDay").append(date);
-
-// //const checkTime = function () {
-// const currentTime = moment().format("HH");
-
-// const hourBlock = $(".col-md-1 hour");
-
-//   for (const index = 0; index < hourBlock.length, i++ ) {
-// const hourBlockID = hourBlock[index].id;
-
-// const timeBlockID = document.getElementById("hourBlock");
-
-// $(hourBlock[index].id).removeClass(".present .past .future");
-
-//  if (hourBlockID < currentTime) {
-//   $(timeBlockID).addClass("past");
-// }
-//  else if (hourBlockID > currentTime) {
-//  $(timeBlockID).addClass("future");
-// }
-//  else {
-//  $(timeBlockID).addClass("present");
-//  }
-//  }
-//  };
