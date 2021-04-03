@@ -10,7 +10,6 @@ const renderCalenderEvents = () => {
   if (schedulerEvents !== null) {
     const currentHour = moment().hour();
     const timeBlocks = $(".container .row");
-    console.log(timeBlocks);
     const callback = function () {
       const textArea = $(this).find("textarea");
       const timeBlockTime = Number.parseInt($(this).data("time"), 10);
@@ -44,13 +43,10 @@ const onClick = function (event) {
     };
 
     localStorage.setItem("schedulerEvents", JSON.stringify(newObject));
-    console.log(key, value);
-    console.log(newObject);
   }
 };
 
 const onReady = () => {
-  console.log("I am ready");
   $(".container").click(onClick);
   renderCurrentDate();
 
