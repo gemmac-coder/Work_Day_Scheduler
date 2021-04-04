@@ -12,6 +12,10 @@ These dynamic features helped to enhance the user experience, whilst helping the
 
 ## What did I do?
 
+- Used Moment.js to dynamically show the current day's date
+- Used Moment.js to retrieve the current time and to enable the timeblocks to be dynamically coloured coded, depending on whether that hour was past, present or future
+- Used ES6 functions
+
 ## Screenshot
 
 ![Screenshot of deployed Work Day Scheduler application](assets/screenshots/work-day-scheduler-deployed-application.png)
