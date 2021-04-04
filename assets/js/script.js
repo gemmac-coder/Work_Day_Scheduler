@@ -14,9 +14,11 @@ const renderCalenderEvents = () => {
     const callback = function () {
       const textArea = $(this).find("textarea");
       const timeBlockTime = Number.parseInt($(this).data("time"), 10);
+      // If the corresponding timeblock time is equal to the current hour, the present class is added to the timeblock
       if (timeBlockTime === currentHour) {
         textArea.removeClass("past").addClass("present");
       }
+      // If the corresponding timeblock time is greater than the current hour, the future class is added to the timeblock
       if (timeBlockTime > currentHour) {
         textArea.removeClass("past").addClass("future");
       }
