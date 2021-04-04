@@ -16,9 +16,8 @@ These dynamic features helped to enhance the user experience, whilst helping the
 - Used Moment.js to retrieve the current time and conditionals to enable the timeblocks to be dynamically coloured coded, depending on whether that hour was past, present or future
 - Used ES6 functions
 - Used data attributes to assign a time value for each timeblock
-- Created a onClick function and local storage so that when a save button for a timeblock was pressed, the user inputted text for that timeblock would be saved
+- Created an onClick function which utilised local storage so that when a save button for a timeblock was pressed, the user inputted text for that timeblock would be saved
 - Created an onReady function so the calendar would load and dynamically retrieve the current date, the timeblocks, and any saved scheduled events for that date
--
 
 ## Screenshot
 
