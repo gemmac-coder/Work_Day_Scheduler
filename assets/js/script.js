@@ -1,12 +1,13 @@
+//Displays current date
 const renderCurrentDate = () => {
   const dateTime = $("#currentDay");
   const displayNow = moment().format("dddd, MMMM Do");
   dateTime.text(displayNow);
 };
-
+// Renders calendar events and retrieves scheduler events from local storage
 const renderCalenderEvents = () => {
   const schedulerEvents = JSON.parse(localStorage.getItem("schedulerEvents"));
-
+  // Dynamic colour coding based on if the timeblock is in the past, present or future
   if (schedulerEvents !== null) {
     const currentHour = moment().hour();
     const timeBlocks = $(".container .row");
@@ -28,7 +29,7 @@ const renderCalenderEvents = () => {
     localStorage.setItem("schedulerEvents", JSON.stringify({}));
   }
 };
-
+// Every time a timeblock button is clicked, the input from the textarea is saved in local storage
 const onClick = function (event) {
   const schedulerEvents = JSON.parse(localStorage.getItem("schedulerEvents"));
   const target = $(event.target);
@@ -45,7 +46,7 @@ const onClick = function (event) {
     localStorage.setItem("schedulerEvents", JSON.stringify(newObject));
   }
 };
-
+// Loads dynamic date and saved calender events from local storage, adds click event listener to container
 const onReady = () => {
   $(".container").click(onClick);
   renderCurrentDate();
