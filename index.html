@@ -4,125 +4,132 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Link to Boostrap-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!--Link to Font Awesome-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <!--Link to Google Fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
+    <!-- Header-->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <!-- 9am Timeblock -->
       <div class="row" data-time="9">
         <div class="col-md-1 hour">9am</div>
-
+        <!--9am Timeblock Text Area-->
         <textarea class="col-md-10 past"></textarea>
-
+        <!--9am Timeblock Save Button-->
         <button id="9" class="col-md-1 saveBtn">
           <i class="fas fa-save"></i>
         </button>
       </div>
-
+      <!--10am Timeblock-->
       <div class="row" data-time="10">
         <div class="col-md-1 hour">10am</div>
-
+        <!--10am Timeblock Text Area-->
         <textarea class="col-md-10 past"></textarea>
-
+        <!--10am Timeblock Save Button -->
         <button id="10" class="col-md-1 saveBtn">
           <i class="fas fa-save"></i>
         </button>
       </div>
-
+      <!--11am Timeblock-->
       <div class="row" data-time="11">
         <div class="col-md-1 hour">11am</div>
-
+        <!--11am Timeblock Text Area-->
         <textarea class="col-md-10 past"></textarea>
-
+        <!--11am Timeblock Save Button-->
         <button id="11" class="col-md-1 saveBtn">
           <i class="fas fa-save"></i>
         </button>
       </div>
-
+      <!--12pm Timeblock-->
       <div class="row" data-time="12">
         <div class="col-md-1 hour">12pm</div>
-
+        <!--12pm Timeblock Text Area-->
         <textarea class="col-md-10 past"></textarea>
-
+        <!--12pm Timeblock Save Button-->
         <button id="12" class="col-md-1 saveBtn">
           <i class="fas fa-save"></i>
         </button>
       </div>
-
+      <!--1pm Timeblock-->
       <div class="row" data-time="13">
         <div class="col-md-1 hour">1pm</div>
-
+        <!--1pm Timeblock Text Area-->
         <textarea class="col-md-10 past"></textarea>
-
+        <!--1pm Timeblock Save Button-->
         <button id="13" class="col-md-1 saveBtn">
           <i class="fas fa-save"></i>
         </button>
       </div>
-
+      <!--2pm Timeblock-->
       <div class="row" data-time="14">
         <div class="col-md-1 hour">2pm</div>
-
+        <!--2pm Timeblock Text Area-->
         <textarea class="col-md-10 past"></textarea>
-
+        <!--2pm Timeblock Save Button-->
         <button id="14" class="col-md-1 saveBtn">
           <i class="fas fa-save"></i>
         </button>
       </div>
-
+      <!--3pm Timeblock-->
       <div class="row" data-time="15">
         <div class="col-md-1 hour">3pm</div>
-
+        <!--3pm Timeblock Text Area-->
         <textarea class="col-md-10 past"></textarea>
-
+        <!--3pm Timeblock Save Button-->
         <button id="15" class="col-md-1 saveBtn">
           <i class="fas fa-save"></i>
         </button>
       </div>
-
+      <!--4pm Timeblock-->
       <div class="row" data-time="16">
         <div class="col-md-1 hour">4pm</div>
-
+        <!--4pm Timeblock Text Area -->
         <textarea class="col-md-10 past"></textarea>
-
+        <!--4pm Timeblock Save Button-->
         <button id="16" class="col-md-1 saveBtn">
           <i class="fas fa-save"></i>
         </button>
       </div>
-
+      <!--5pm Timeblock-->
       <div class="row" data-time="17">
         <div class="col-md-1 hour">5pm</div>
-
+        <!--5pm Timeblock Text Area-->
         <textarea class="col-md-10 past"></textarea>
-
+        <!--5pm Timeblock Save Button-->
         <button id="17" class="col-md-1 saveBtn">
           <i class="fas fa-save"></i>
         </button>
       </div>
     </div>
-
+    <!--Link to Jquery Library-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Link to Moment.js Library-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--Link to Javascript-->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
