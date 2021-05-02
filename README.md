@@ -8,7 +8,19 @@ Each timeblock had to enable the user to input their planned task(s) for the hou
 
 The work day scheduler utilised the Moment.js date and time utility library to dynamically show the current day and to dynamically colour-code the timeblock. This dynamic colour-coding depended on whether a timeblock hour was past, present or future in relation to the current time. Timeblocks relating to hours in the past were dynamically coloured grey, the timeblock relating to the current hour was coloured red, and any future timeblocks were dynamically coloured green.
 
-These dynamic features helped to enhance the user experience, whilst helping the user to effectively manage their day.
+## Technologies & Languages Used:
+
+- HTML5
+- CSS
+- Javascript
+- jQuery
+- Moment.js date and time library
+- Local storage
+- ES6 Functions
+
+## License
+
+MIT
 
 ## What did I do?
 
@@ -23,6 +35,10 @@ These dynamic features helped to enhance the user experience, whilst helping the
 
 ![Screenshot of deployed Work Day Scheduler application](assets/screenshots/work-day-scheduler-deployed-application.png)
 
+![Screenshot of deployed Work Day Scheduler application](assets/screenshots/work-day-scheduler-dynamic-colour-coding.png)
+
 ## Link to deployed application:
 
 https://gemmac-coder.github.io/Work_Day_Scheduler/
+
+For more information, please contact: gemmacollinge_71@hotmail.com
