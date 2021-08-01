@@ -39,6 +39,6 @@ MIT
 
 ## Link to deployed application:
 
-https://gemmac-coder.github.io/Work_Day_Scheduler/
+https://gemmac-coder.github.io/work-day-scheduler/
 
 For more information, please contact: gemmacollinge_71@hotmail.com
